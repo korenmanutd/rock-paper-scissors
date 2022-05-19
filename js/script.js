@@ -1,10 +1,11 @@
 let action = ['rock', 'paper', 'scissors'];
+
+// select random from list of "action"
 function computerPlay(){
     return randomPick = action[Math.floor(Math.random() * action.length)];
 }
 
 function playRound(playerSelection, computerSelection){
-
     if(playerSelection == 'rock' && computerSelection == 'rock'){
         return result = 'tie';
     } else if (playerSelection == 'rock' && computerSelection == 'paper'){
@@ -54,6 +55,7 @@ function game(){
             console.log(`one point to computer`)
         } else {
             console.log('somethings wrong')
+            //if player doesn't pick one of the actions, loop will keep on going.
             i--;
         }
 
