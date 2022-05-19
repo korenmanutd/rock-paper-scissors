@@ -54,16 +54,17 @@ function game(){
             console.log(`one point to computer`)
         } else {
             console.log('somethings wrong')
+            i--;
         }
 
     }
     // check to see who wins
     if (playerScore > computerScore){
-        console.log("player wins!")
+        console.log(`Player scored ${playerScore} points, so he\'s the winner!`)
     } else if (playerScore === computerScore){
-        console.log("tie!")
+        console.log(`Player score: ${playerScore} ---- Computer score: ${computerScore} therefore it\'s a tie.`)
     } else {
-        console.log('computer wins!')
+        console.log(`Computer scored ${computerScore} points, so he\'s the winner!`)
     }
 }
 
