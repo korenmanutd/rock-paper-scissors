@@ -34,6 +34,9 @@ function playRound(playerSelection, computerSelection){
     }
 }
 
+const playerSelection = addEventListener('click', (e) => {
+    console.log(e);
+})
 
 // function game(){
 //     // set a counter for player and computer
