@@ -30,36 +30,36 @@ function playRound(playerSelection, computerSelection){
 }
 
 
-function game(){
-    // set a counter for player and computer
-    let playerScore = 0;
-    let computerScore = 0;
-    //play 5 rounds
-    for(let i = 0; i < 5; i++){
-        // call the computerSelection function - computerPlay() to pick random action
-        const computerSelection = computerPlay();
-        let playerSelection = prompt("Please pick your hand - Rock, Paper or Scissors!").toLowerCase();
-        playRound(playerSelection, computerSelection)
-        // log what the computer picks so it looks as real as it can
-        console.log(computerSelection)
-        // compare result to the strings in playRound()
-        if (result === 'tie') {
-            playerScore += 1;
-            computerScore += 1;
-            console.log('tie, point to each')
-        } else if ( result === 'player'){
-            playerScore += 1;
-            console.log(`one point for player`)
-        } else if (result === 'computer') {
-            computerScore += 1;
-            console.log(`one point to computer`)
-        } else {
-            console.log('somethings wrong')
-            //if player doesn't pick one of the actions, loop will keep on going.
-            i--;
-        }
+// function game(){
+//     // set a counter for player and computer
+//     let playerScore = 0;
+//     let computerScore = 0;
+//     //play 5 rounds
+//     for(let i = 0; i < 5; i++){
+//         // call the computerSelection function - computerPlay() to pick random action
+//         const computerSelection = computerPlay();
+//         let playerSelection = prompt("Please pick your hand - Rock, Paper or Scissors!").toLowerCase();
+//         playRound(playerSelection, computerSelection)
+//         // log what the computer picks so it looks as real as it can
+//         console.log(computerSelection)
+//         // compare result to the strings in playRound()
+//         if (result === 'tie') {
+//             playerScore += 1;
+//             computerScore += 1;
+//             console.log('tie, point to each')
+//         } else if ( result === 'player'){
+//             playerScore += 1;
+//             console.log(`one point for player`)
+//         } else if (result === 'computer') {
+//             computerScore += 1;
+//             console.log(`one point to computer`)
+//         } else {
+//             console.log('somethings wrong')
+//             //if player doesn't pick one of the actions, loop will keep on going.
+//             i--;
+//         }
 
-    }
+//     }
     // check to see who wins
     if (playerScore > computerScore){
         console.log(`Player scored ${playerScore} points, so he\'s the winner!`)
