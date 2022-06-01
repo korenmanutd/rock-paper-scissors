@@ -1,5 +1,10 @@
 let action = ['rock', 'paper', 'scissors'];
 
+const rock = document.querySelector('#rock');
+const paper = document.querySelector('#paper');
+const scissors = document.querySelector('#scissors');
+
+
 // select random from list of "action"
 function computerPlay(){
     return randomPick = action[Math.floor(Math.random() * action.length)];
@@ -61,13 +66,13 @@ function playRound(playerSelection, computerSelection){
 
 //     }
     // check to see who wins
-    if (playerScore > computerScore){
-        console.log(`Player scored ${playerScore} points, so he\'s the winner!`)
-    } else if (playerScore === computerScore){
-        console.log(`Player score: ${playerScore} ---- Computer score: ${computerScore} therefore it\'s a tie.`)
-    } else {
-        console.log(`Computer scored ${computerScore} points, so he\'s the winner!`)
-    }
-}
+//     if (playerScore > computerScore){
+//         console.log(`Player scored ${playerScore} points, so he\'s the winner!`)
+//     } else if (playerScore === computerScore){
+//         console.log(`Player score: ${playerScore} ---- Computer score: ${computerScore} therefore it\'s a tie.`)
+//     } else {
+//         console.log(`Computer scored ${computerScore} points, so he\'s the winner!`)
+//     }
+// }
 
-game()
+// game()
